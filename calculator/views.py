@@ -32,4 +32,4 @@ def dishes(request, dish):
         number = 1
     ingredients = {ingredient: number*count for ingredient, count in what_dish.items()}
     context = {'recipe': ingredients}
-    return render(request, 'calculator\calculator.html', context)    
+    return render(request, 'calculator/calculator.html', context)    
